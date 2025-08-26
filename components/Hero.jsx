@@ -7,10 +7,10 @@ const Hero = () => {
         <div className="container mx-auto text-center">
             <div className="mb-8">
                 <Image
-                    src="/personal image.jpg"
+                    src="/personal image.jpeg"
                     alt="Profile"
-                    width={250}
-                    height={250}
+                    width={230}
+                    height={230}
                     className="rounded-full mx-auto mb-6 border-4 border-primary/20"
                 />
             </div>
