@@ -41,11 +41,11 @@ const Projects = async () => {
                                     key={index + "tech"}>{item}</div>)}
                             </div>
                             <div className="flex gap-2">
-                                <Link href={item?.fields?.liveLink} target={"_blank"}>
+                                <Link href={item?.fields?.liveLink || "#"} target={"_blank"}>
                                     <LuExternalLink className="mr-2 h-4 w-4"/>
                                     Live Demo
                                 </Link>
-                                <Link href={item?.fields?.githubLink} target={"_blank"}>
+                                <Link href={item?.fields?.githubLink || "#"} target={"_blank"}>
                                     <LuGithub className="mr-2 h-4 w-4"/>
                                     Code
                                 </Link>

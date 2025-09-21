@@ -7,10 +7,10 @@ const Hero = () => {
         <div className="container mx-auto text-center">
             <div className="mb-8">
                 <Image
-                    src="/personal image.jpeg"
+                    src="/personal image new.JPG"
                     alt="Profile"
-                    width={230}
-                    height={230}
+                    width={300}
+                    height={300}
                     className="rounded-full mx-auto mb-6 border-4 border-primary/20"
                 />
             </div>
@@ -18,7 +18,7 @@ const Hero = () => {
                 Aleksandar Kuzmanovic
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Full-Stack Developer & SEO specialist
+                Full-Stack Developer + Performance and SEO specialist
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
