@@ -8,9 +8,11 @@ const Hero = () => {
             <div className="mb-8">
                 <Image
                     src="/personal image new.JPG"
+                    quality={50}
                     alt="Profile"
                     width={300}
                     height={300}
+                    priority={true}
                     className="rounded-full mx-auto mb-6 border-4 border-primary/20"
                 />
             </div>
@@ -25,7 +27,7 @@ const Hero = () => {
                     href="https://github.com/kuzma02"
                     className="text-xl px-8 bg-black text-white flex gap-1 items-center py-3 rounded-lg cursor-pointer">
                     See Github
-                    <LuArrowRight className="ml-2 h-5 w-5"/>
+                    <LuArrowRight className="ml-2 h-5 w-5" />
                 </Link>
                 <button className="text-xl cursor-pointer px-8 border border-gray-500 flex gap-1 items-center py-3 rounded-lg ">
                     Download CV

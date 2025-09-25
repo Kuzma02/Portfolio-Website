@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import {LuExternalLink, LuGithub} from "react-icons/lu";
-import {createClient} from "contentful";
+import { LuExternalLink, LuGithub } from "react-icons/lu";
+import { createClient } from "contentful";
 
 const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
@@ -9,7 +9,7 @@ const client = createClient({
 })
 
 const Projects = async () => {
-    const entries = await client.getEntries({content_type: 'portfolioProjects'})
+    const entries = await client.getEntries({ content_type: 'portfolioProjects' })
     return <section id="projects" className="py-20 px-4">
         <div className="container mx-auto">
             <div className="text-center mb-16">
@@ -25,6 +25,7 @@ const Projects = async () => {
                             <Image
                                 src={`https:` + item?.fields?.image?.fields?.file?.url}
                                 alt="Project 1"
+                                quality={30}
                                 width={400}
                                 height={200}
                                 className="w-full h-48 object-cover rounded-t-lg"
@@ -41,14 +42,14 @@ const Projects = async () => {
                                     key={index + "tech"}>{item}</div>)}
                             </div>
                             <div className="flex gap-2">
-                                <Link href={item?.fields?.liveLink || "#"} target={"_blank"}>
-                                    <LuExternalLink className="mr-2 h-4 w-4"/>
+                                {item?.fields?.liveLink && <Link href={item?.fields?.liveLink || "#"} target={"_blank"}>
+                                    <LuExternalLink className="mr-2 h-4 w-4" />
                                     Live Demo
-                                </Link>
-                                <Link href={item?.fields?.githubLink || "#"} target={"_blank"}>
-                                    <LuGithub className="mr-2 h-4 w-4"/>
+                                </Link>}
+                                {item?.fields?.githubLink && <Link href={item?.fields?.githubLink || "#"} target={"_blank"}>
+                                    <LuGithub className="mr-2 h-4 w-4" />
                                     Code
-                                </Link>
+                                </Link>}
                             </div>
                         </div>
                     </div>
