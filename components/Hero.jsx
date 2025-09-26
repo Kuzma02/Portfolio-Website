@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {LuArrowRight} from "react-icons/lu";
+import {LuArrowRight, LuGithub} from "react-icons/lu";
 import Link from "next/link";
 
 const Hero = () => {
@@ -29,9 +29,6 @@ const Hero = () => {
                     See Github
                     <LuArrowRight className="ml-2 h-5 w-5" />
                 </Link>
-                <button className="text-xl cursor-pointer px-8 border border-gray-500 flex gap-1 items-center py-3 rounded-lg ">
-                    Download CV
-                </button>
             </div>
         </div>
     </section>
