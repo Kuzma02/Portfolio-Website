@@ -26,7 +26,7 @@ const Hero = () => {
                 <Link
                     href="https://github.com/kuzma02"
                     className="text-xl px-8 bg-black text-white flex gap-1 items-center py-3 rounded-lg cursor-pointer">
-                    See Github
+                    See GitHub
                     <LuArrowRight className="ml-2 h-5 w-5" />
                 </Link>
             </div>
