@@ -36,6 +36,10 @@ const About = () => {
                         <p className="text-muted-foreground">10+ years in web development</p>
                     </div>
                     <div>
+                        <h4 className="font-semibold mb-2">Education</h4>
+                        <p className="text-muted-foreground">B.Sc. in Computer Science</p>
+                    </div>
+                    <div>
                         <h4 className="font-semibold mb-2">Location</h4>
                         <p className="text-muted-foreground flex items-center">
                             <LuMapPin className="mr-2 h-4 w-4" />
