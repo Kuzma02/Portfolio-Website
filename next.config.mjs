@@ -7,6 +7,7 @@ const nextConfig = {
                 hostname: "images.ctfassets.net",
             },
         ],
+        qualities: [30, 50, 75],
     },
 };
 
