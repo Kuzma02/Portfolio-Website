@@ -8,7 +8,7 @@ const Hero = () => {
             <div className="mb-8">
                 <Image
                     src="/personal image new.JPG"
-                    quality={50}
+                    quality={100}
                     alt="Profile"
                     width={300}
                     height={300}
